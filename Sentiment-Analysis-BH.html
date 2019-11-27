@@ -14926,7 +14926,7 @@ Starting  neg  files
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Step-7-(again):-Use-the-model-for-the-web-app">Step 7 (again): Use the model for the web app<a class="anchor-link" href="#Step-7-(again):-Use-the-model-for-the-web-app">&#182;</a></h2><blockquote><p><strong>TODO:</strong> This section and the next are mostly done using the AWS console.</p>
+<h2 id="Step-7-(again):-Use-the-model-for-the-web-app">Step 7 (again): Use the model for the web app<a class="anchor-link" href="#Step-7-(again):-Use-the-model-for-the-web-app">&#182;</a></h2><blockquote><p>This section and the next are mostly done using the AWS console.</p>
 </blockquote>
 <p>So far we have been accessing our model endpoint by constructing a predictor object which uses the endpoint and then just using the predictor object to perform inference. What if we wanted to create a web app which accessed our model? The way things are set up currently makes that not possible since in order to access a SageMaker endpoint the app would first have to authenticate with AWS using an IAM role which included access to SageMaker endpoints. However, there is an easier way! We just need to use some additional AWS services.</p>
 <p><img src="Web App Diagram.svg"></p>
@@ -15041,19 +15041,6 @@ Starting  neg  files
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">delete_endpoint</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
